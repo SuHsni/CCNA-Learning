@@ -27,7 +27,7 @@ I need to divide the available address space into multiple subnets based on the 
   - First Valid IP
   - Last Valid IP
   - Broadcast Address
-  -
+  - Subnet Mask
 - Use the available IP address space as efficiently as possible.
 
 ---
