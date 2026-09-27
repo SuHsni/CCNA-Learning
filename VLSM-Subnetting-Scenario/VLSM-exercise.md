@@ -13,6 +13,9 @@ I need to divide the available address space into multiple subnets based on the 
 | Subnet C |             32 |
 | Subnet D |             64 |
 | Subnet E |             32 |
+| Subnet F |              2 |
+| Subnet G |              2 |
+| Subnet H |              2 |
 
 ## Objectives
 
@@ -24,7 +27,7 @@ I need to divide the available address space into multiple subnets based on the 
   - First Valid IP
   - Last Valid IP
   - Broadcast Address
-  - Usable Hosts
+  -
 - Use the available IP address space as efficiently as possible.
 
 ---
@@ -73,6 +76,8 @@ First, I sorted the subnets from largest to smallest.
 
 **Broadcast:** `192.168.1.255`
 
+**Subnet Mask:** `11111111.11111111.11111110.00000000 Or 255.255.254.0`
+
 ---
 
 ## Subnet B → 250
@@ -88,6 +93,8 @@ First, I sorted the subnets from largest to smallest.
 **Last Valid IP:** `192.168.2.254`
 
 **Broadcast:** `192.168.2.255`
+
+**Subnet Mask:** `11111111.11111111.11111111.00000000 Or 255.255.255.0`
 
 ---
 
@@ -105,6 +112,8 @@ First, I sorted the subnets from largest to smallest.
 
 **Broadcast:** `192.168.3.127`
 
+**Subnet Mask:** `11111111.11111111.11111111.10000000 Or 255.255.255.128`
+
 ---
 
 ## Subnet C → 32
@@ -120,6 +129,8 @@ First, I sorted the subnets from largest to smallest.
 **Last Valid IP:** `192.168.3.190`
 
 **Broadcast:** `192.168.3.191`
+
+**Subnet Mask:** `11111111.11111111.11111111.11000000 Or 255.255.254.192`
 
 ---
 
@@ -137,6 +148,8 @@ First, I sorted the subnets from largest to smallest.
 
 **Broadcast:** `192.168.3.255`
 
+**Subnet Mask:** `11111111.11111111.11111111.11000000 Or 255.255.255.192`
+
 ---
 
 ## Subnet F → 2
@@ -152,6 +165,8 @@ First, I sorted the subnets from largest to smallest.
 **Last Valid IP:** `192.168.4.2`
 
 **Broadcast:** `192.168.4.3`
+
+**Subnet Mask:** `11111111.11111111.11111111.11111100 Or 255.255.255.252`
 
 ---
 
@@ -169,6 +184,8 @@ First, I sorted the subnets from largest to smallest.
 
 **Broadcast:** `192.168.4.7`
 
+**Subnet Mask:** `11111111.11111111.11111111.11111100 Or 255.255.255.252`
+
 ---
 
 ## Subnet H → 2
@@ -184,6 +201,8 @@ First, I sorted the subnets from largest to smallest.
 **Last Valid IP:** `192.168.4.10`
 
 **Broadcast:** `192.168.4.11`
+
+**Subnet Mask:** `11111111.11111111.11111111.11111100 Or 255.255.255.252`
 
 ---
 
