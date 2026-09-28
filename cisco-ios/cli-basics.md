@@ -92,4 +92,4 @@ example 2: my-router(config)#do wr
 
 example: my-router#show flash: ?
 
-<cr>
+< cr>
